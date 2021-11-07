@@ -1,6 +1,204 @@
-#cont_numbers{
-  width: 15%;
+*{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+body{
+  background: var(--Very-dark-desaturated);
+  font-family: 'Spartan', sans-serif;
+}
+
+
+:root{
+/* ### Theme 1 */
+
+/* #### Backgrounds */
+
+--Very-dark-desaturated: hsl(222, 26%, 31%);
+--Very-dark-desaturated1: hsl(223, 31%, 20%);
+--Very-dark-desaturated2: hsl(224, 36%, 15%);
+
+/* #### Keys */
+
+--Desaturated-dark: hsl(225, 21%, 49%);
+--Desaturated-dark2: hsl(224, 28%, 35%);
+
+--Red: hsl(6, 63%, 50%);
+--Dark_red: hsl(6, 70%, 34%);
+
+--Light-grayish: hsl(30, 25%, 89%);
+--Grayish: hsl(28, 16%, 65%);
+
+/* #### Text */
+
+--Very-dark: hsl(221, 14%, 31%);
+--White: hsl(0, 0, 100%);
+
+/* ### Theme 2 */
+
+/* #### Backgrounds */
+
+--Light: hsl(0, 0%, 90%);
+--Grayish: hsl(0, 5%, 81%);
+--Very-light: hsl(0, 0%, 93%);
+
+/* #### Keys */
+
+--Dark-moderate: hsl(185, 42%, 37%);
+--Very-dark: hsl(185, 58%, 25%);
+
+--Orange: hsl(25, 98%, 40%);
+--Dark: hsl(25, 99%, 27%);
+
+--Light-grayish: hsl(45, 7%, 89%);
+--Dark-grayish: hsl(35, 11%, 61%);
+
+/* #### Text */
+
+--Very-dark: hsl(60, 10%, 19%);
+--White: hsl(0, 0, 100%);
+
+/* ### Theme 3 */
+
+/* #### Backgrounds */
+
+--Very-dark: hsl(268, 75%, 9%);
+--Very-dark: hsl(268, 71%, 12%);
+
+/* #### Keys */
+
+--Dark-violet: hsl(281, 89%, 26%);
+--Vivid-magenta: hsl(285, 91%, 52%);
+
+--Pure-cyan: hsl(176, 100%, 44%);
+--Soft-cyan: hsl(177, 92%, 70%);
+
+--Very-dark-violet: hsl(268, 47%, 21%);
+--Dark-magenta: hsl(290, 70%, 36%);
+
+/* #### Text */
+
+--Light-yellow: hsl(52, 100%, 62%);
+--Very-dark: hsl(198, 20%, 13%);
+--White: hsl(0, 0, 100%);
+}
+
+.cont_geral_themes {
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+#title_themes{
+  font-size: 15px;
+  padding: 0px 10px 0px 0px;
+  color: white;
+}
+
+span#themes {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 10px;
+  gap: 5px;
+}
+
+span#check_themes {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.container_geral{
+  width: 35%;
+  margin: auto;
+}
+
+.cont_header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.cont_header h1 {
+  color: white;
+}
+
+.cont_display_resultado {
+  background: var(--Very-dark-desaturated2);
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  height: 80px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cont_display_resultado p {
+  padding-right: 30px;
+}
+
+.cont_teclado {
+  background: var(--Very-dark-desaturated1);
+  margin-top: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  height: 400px;
+}
+
+.linha_teclado {
+  display: flex;
+}
+
+.linha_teclado button {
+  width: 80px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 1px var(--Grayish);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--Very-dark-desaturated);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button#btn_del {
+  background: var(--Desaturated-dark);
+  color: white;
+  box-shadow: 0px 4px 1px var(--Desaturated-dark2);
+  font-size: 22px;
+  width: 80px;
+  height: 50px;
+}
+
+
+
+.linha_teclado_ultima button {
+  width: 180px;
+  height: 50px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 1px var(--Grayish);
+  margin: 10px;
+}
+
+button#btn_reset {
+  background: var(--Desaturated-dark);
+  color: white;
+  box-shadow: 0px 4px 1px var(--Desaturated-dark2);
+  font-size: 22px;
+}
+
+button#btn_igual {
+  background: var(--Red);
+  color: white;
+  box-shadow: 0px 4px 1px var(--Dark_red);
+  font-size: 22px;
 }

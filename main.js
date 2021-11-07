@@ -37,3 +37,12 @@ function res(){
   display.innerText = eval(arr.join(''));
   arr = [];
 }
+
+function del(){
+  alert('Desculpe Mas Esse Botão Ainda Não Está Funcionando!')
+}
+
+function reset(){
+  arr = [];
+  display.innerText = 'Foi Resetado!';
+}
