@@ -38,11 +38,12 @@ function res(){
   arr = [];
 }
 
-function del(){
-  alert('Desculpe Mas Esse Botão Ainda Não Está Funcionando!')
-}
-
 function reset(){
   arr = [];
   display.innerText = 'Foi Resetado!';
+}
+
+function del(){
+  arr.pop()
+  display.innerText = arr.join('');
 }
