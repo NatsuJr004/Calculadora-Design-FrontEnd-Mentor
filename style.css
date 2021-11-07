@@ -1,0 +1,6 @@
+#cont_numbers{
+  width: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
