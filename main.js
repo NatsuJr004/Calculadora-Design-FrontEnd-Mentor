@@ -1,4 +1,4 @@
-// Display e Resultado
+// Variaveis 
 var value = null;
 let arr = [];
 
