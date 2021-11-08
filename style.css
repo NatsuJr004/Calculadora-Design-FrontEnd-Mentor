@@ -110,7 +110,7 @@ span#check_themes {
 }
 
 .container_geral{
-  width: 35%;
+  max-width: 440px;
   margin: auto;
 }
 
