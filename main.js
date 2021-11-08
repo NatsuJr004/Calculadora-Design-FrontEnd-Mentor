@@ -16,19 +16,19 @@ function pegaValor(dado){
 
 // Função resultado 
 function res(){
-  display.innerText = eval(arr.join(''));
-  arr = [];
+  display.innerText = eval(arr.join('')); /*exibe o resultado da conta ja feita na tela! */
+  arr = [];/*Limpa o array */
 }
 
 
 // Função de Resetar  
 function reset(){
-  arr = [];
+  arr = [];/*reseta o array deixando-o sem nada dentro */
   display.innerText = 'Foi Resetado!';
 }
 
 // Função de Deletar 
 function del(){
-  arr.pop()
+  arr.pop() /*delteta o ultimo valor do array*/
   display.innerText = arr.join('');
 }
